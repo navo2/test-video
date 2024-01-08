@@ -1,0 +1,80 @@
+<VAST xmlns:xsi="//www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:noNamespaceSchemaLocation="vast.xsd">
+<Ad id="232859236">
+<InLine>
+<AdSystem version="2.0">Alex_Vast</AdSystem>
+<AdTitle/>
+<Description/>
+<Survey/>
+<Impression id="DART">
+<![CDATA[ //s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?2 ]]>
+</Impression>
+<Creatives>
+<Creative sequence="1" AdID="">
+<Linear>
+<Duration>00:00:30</Duration>
+<TrackingEvents>
+<Tracking event="start">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?1</Tracking>
+<Tracking event="impression">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?2</Tracking>
+<Tracking event="firstQuartile">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?3</Tracking>
+<Tracking event="midpoint">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?4</Tracking>
+<Tracking event="thirdQuartile">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?5</Tracking>
+<Tracking event="complete">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?6</Tracking>
+<Tracking event="pause">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?7</Tracking>
+<Tracking event="mute">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?8</Tracking>
+<Tracking event="fullscreen">//s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?9</Tracking>
+</TrackingEvents>
+<AdParameters/>
+<VideoClicks>
+<ClickThrough>
+<![CDATA[ //www.jwplayer.com/ ]]>
+</ClickThrough>
+<ClickTracking id="Alex">
+<![CDATA[ //s3.amazonaws.com/qa.jwplayer.com/~alex/pixel.gif?10 ]]>
+</ClickTracking>
+</VideoClicks>
+<MediaFiles>
+<MediaFile id="1" delivery="progressive" type="video/mp4" bitrate="0" width="640" height="360">
+<![CDATA[ https://adzassets.s3.amazonaws.com/Lucky1/Final_Lucky1.mp4 ]]>
+</MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+<Creative sequence="1" AdID="">
+<CompanionAds>
+<Companion id="1" width="300" height="250">
+<StaticResource creativeType="image/jpeg">
+<![CDATA[ //s3.amazonaws.com/qa.jwplayer.com/~alex/post_300X250.jpg ]]>
+</StaticResource>
+<CompanionClickThrough>
+<![CDATA[ //www.jwplayer.com/ ]]>
+</CompanionClickThrough>
+<AltText/>
+<AdParameters/>
+</Companion>
+<Companion id="2" width="728" height="90">
+<StaticResource creativeType="image/jpeg">
+<![CDATA[ //s3.amazonaws.com/qa.jwplayer.com/~alex/post_728X90.jpg ]]>
+</StaticResource>
+<CompanionClickThrough>
+<![CDATA[ //www.jwplayer.com/ ]]>
+</CompanionClickThrough>
+<AltText/>
+<AdParameters/>
+</Companion>
+</CompanionAds>
+</Creative>
+</Creatives>
+<Extensions>
+<Extension type="DART">
+<AdServingData>
+<DeliveryData>
+<GeoData>
+<![CDATA[ ct=US&st=NY&ac=212&zp=10021&bw=3&dma=3&city=13275 ]]>
+</GeoData>
+</DeliveryData>
+</AdServingData>
+</Extension>
+</Extensions>
+</InLine>
+</Ad>
+</VAST>
