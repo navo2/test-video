@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Player Example</title>
+    <!-- Include Fluid Player library -->
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+</head>
+<body>
+    <!-- Your video container -->
+    
+    <video id="video-id" style="width: 100%; height: 100%">
+        <source src='https://content.jwplatform.com/videos/wQGs0itq-bmYWYz9w.mp4' title='720p' type='video/mp4' />
+        <source src='https://content.jwplatform.com/videos/wQGs0itq-GF5j8lc4.mp4' title='480p' type='video/mp4' />
+        <source src='https://content.jwplatform.com/videos/wQGs0itq-50O4KZx8.mp4' title='270p' type='video/mp4' />
+
+    </video>
+
+    <script>
+        var myFP = fluidPlayer(
+            'video-id',	{
+        "layoutControls": {
+            "controlBar": {
+                "autoHideTimeout": 3,
+                "animated": true,
+                "autoHide": true
+            },
+            logo: {
+                imageUrl: 'https://i.ibb.co/1fhszLT/ADSTUDIO-PLAYER-2.png', // Default null
+                position: 'top left', // Default 'top left'
+                clickUrl: 'https://adstudio.cloud/',
+                opacity: 0.8, // Default 1
+                mouseOverImageUrl: null,
+                imageMargin: '5px', // Default '2px'
+                hideWithControls: true, // Default false
+                showOverAds: 'true', // Default false
+                width: '100px',/* Set your desired width */
+            height: '100px', 
+            },
+            "htmlOnPauseBlock": {
+                "html": null,
+                "height": '100%',
+                "width": '100%',
+            },
+            "autoPlay": false,
+            "mute": true,
+            "allowTheatre": true,
+            "playPauseAnimation": true,
+            "playbackRateEnabled": true,
+            "allowDownload": true,
+            "playButtonShowing": true,
+            "fillToContainer": true,
+            "posterImage": "",
+            primaryColor: "#982678"
+        },
+        "vastOptions": {
+            "adList": [
+                {
+                    "roll": "preRoll",
+                    "vastTag": "https://test-video-iota.vercel.app/lucky1.xml",
+                    "adText": ""
+                },
+                {
+                    "roll": "midRoll",
+                    "vastTag": "https://test-video-iota.vercel.app/adstudio.xml",
+                    "adText": ""
+                },
+                {
+                    roll: 'midRoll',
+                    vastTag: 'https://test-video-iota.vercel.app/combank.xml',
+                    // In case vastTag fails, the player will fallback to one of the valid tags from this array
+                    fallbackVastTags: ['https://xml-kappa.vercel.app/video.xml', 'https://xml-kappa.vercel.app/video.xml'],
+                    // multiple ads for the same time
+                    timer: 5
+                },                
+                {
+                    roll: 'postRoll',
+                    vastTag: 'https://test-video-iota.vercel.app/adstudio.xml',
+                    timer: 8,
+                    adClickable: false // Default true
+                },
+                {
+                    "roll": "postRoll",
+                    "vastTag": "https://test-video-iota.vercel.app/combank.xml",
+                    "adText": ""
+                }
+            ],
+            "adCTAText": false,
+            "adCTATextPosition": ""
+        }
+    });
+    </script>
+</body>
+</html>
